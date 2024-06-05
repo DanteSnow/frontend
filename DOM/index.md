@@ -48,16 +48,14 @@ DOM은 "Document Object Model"의 약자로, HTML 문서의 구조를 표현하�
 - 브라우저는 HTML 파일의 내용을 처음부터 한 줄씩 읽는다. 이 과정을 파싱이라고 한다.
 - 예시 코드에서 `<html>` 태그를 만나서 DOM 트리의 루트 노드를 생성한다.
 
-> 📌 `<html>`
-> `<html>` 태그는 HTML 문서의 최상위(root) 요소를 나타낸다. DOM 트리에서 문서 노드(document node)의 자식으로 존재하며, 모든 다른 요소들의 부모 요소가 된다. 노드 타입은 요소 노드(Element Node)이다.
+> 📌 `<html>` > `<html>` 태그는 HTML 문서의 최상위(root) 요소를 나타낸다. DOM 트리에서 문서 노드(document node)의 자식으로 존재하며, 모든 다른 요소들의 부모 요소가 된다. 노드 타입은 요소 노드(Element Node)이다.
 
 ### 토큰화 (Tokenization)
 
 - 파서(parser)는 HTML 텍스트를 토큰(token)으로 분리한다. 토큰은 HTML 태그와 텍스트 조각을 의미한다.
 - 예시 코드에서 `<html>`, `<head>`, `<title>` 등의 태그를 토큰으로 분리한다.
 
-> 📌 `<head>`
-> `<head>` 태그는 문서의 메타데이터(meta-information)를 포함한다. 메타데이터는 문서의 제목, 스타일, 스크립트, 링크된 리소스 등을 포함하며, 화면에 직접 표시되지 않는다. 노드 타입은 요소 노드(Element Node)이다.
+> 📌 `<head>` > `<head>` 태그는 문서의 메타데이터(meta-information)를 포함한다. 메타데이터는 문서의 제목, 스타일, 스크립트, 링크된 리소스 등을 포함하며, 화면에 직접 표시되지 않는다. 노드 타입은 요소 노드(Element Node)이다.
 
 ### 속성과 텍스트 노드 처리
 
@@ -70,8 +68,7 @@ DOM은 "Document Object Model"의 약자로, HTML 문서의 구조를 표현하�
 - DOM 트리는 HTML 문서의 구조를 반영하는 계층적 트리 구조이다. (아래에서 더 자세하게 다룬다.)
 - 각 HTML 태그는 DOM 트리의 노드가 된다. `<html>` 태그는 DOM 트리의 루트 노드(root node)가 되고, 그 안에 `<head>`와 `<body>` 태그가 자식 노드(child nodes)로 추가된다.
 
-> 📌 `<body>`
-> `<body>` 태그는 문서의 본문 내용을 포함한다. 사용자가 브라우저에서 볼 수 있는 모든 콘텐츠가 여기에 포함된다. 노드 타입은 요소 노드(Element Node)이다.
+> 📌 `<body>` > `<body>` 태그는 문서의 본문 내용을 포함한다. 사용자가 브라우저에서 볼 수 있는 모든 콘텐츠가 여기에 포함된다. 노드 타입은 요소 노드(Element Node)이다.
 
 ### 트리 구조
 
@@ -137,8 +134,7 @@ DOM 트리는 다양한 종류의 노드로 구성된다. 각각의 노드는 �
 </html>
 ```
 
-> 📌 `<script>`
-> `<script>` 태그는 자바스크립트 코드를 포함하거나 외부 자바스크립트 파일을 로드하는데 사용된다. 이 태그는 일반적으로 `<head>` 또는 `<body>` 안에 위치하며, 자바스크립트 코드를 실행하는 역할을 한다. 노드 타입은 요소 노드(Element Node)이다.
+> 📌 `<script>` > `<script>` 태그는 자바스크립트 코드를 포함하거나 외부 자바스크립트 파일을 로드하는데 사용된다. 이 태그는 일반적으로 `<head>` 또는 `<body>` 안에 위치하며, 자바스크립트 코드를 실행하는 역할을 한다. 노드 타입은 요소 노드(Element Node)이다.
 
 ## 텍스트 노드 (Text Node)
 
@@ -493,6 +489,8 @@ DOM 트리에서 노드를 탐색하는 다양한 메서드들이 있다. 이러
 </html>
 ```
 
+---
+
 # HTML과 JavaScript 파일 분리하기
 
 위의 예시 코드들에서는 HTML 파일 내에 인라인으로 자바스크립트를 작성했다. 하지만 일반적으로는 자바스크립트를 HTML 파일 내에 인라인으로 작성하기보다는 별도의 .js 파일로 분리해서 작성하는 것이 더 좋고 권장되는 방법이다. 이렇게 하면 코드의 유지보수와 가독성이 더 좋아지고, 여러 HTML 파일에서 재사용하기도 쉬워진다.
@@ -686,6 +684,4 @@ DOM 조작이 많아지면 성능 문제가 발생할 수 있다. 이를 피하�
 
 # 참고 문헌
 
-> [Link1](https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction)
-> [Link2](https://www.codestates.com/blog/content/dom-javascript)
-> [Link3](https://poiemaweb.com/js-dom)
+> [Link1](https://developer.mozilla.org/ko/docs/Web/API/Document_Object_Model/Introduction) > [Link2](https://www.codestates.com/blog/content/dom-javascript) > [Link3](https://poiemaweb.com/js-dom)
